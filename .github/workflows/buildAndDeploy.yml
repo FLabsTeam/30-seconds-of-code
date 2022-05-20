@@ -1,0 +1,58 @@
+name: MkDocs Build and deploy
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ wiki ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        python-version: [ 3.8 ]
+    
+    steps:
+    - uses: actions/checkout@v3
+    - name: Webhook
+      id: webhook_request
+      uses: fjogeleit/http-request-action@v1
+      with:
+        url: https://docs.brahma.ai/git/wiki_build_update
+        data: '{ "repoName": "${{ github.repository }}", "targetSha": "${{ github.sha }}"}'
+    - name: Show Response
+      run: echo ${{ steps.mergeRequest.outputs.response }}
+
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v2
+      with:
+        python-version: ${{ matrix.python-version }}
+        architecture: x64
+
+    - name: Install Dependency
+      run: |
+        pip install mkdocs
+        pip install mkdocs-with-pdf
+        pip install mkdocs-mermaid2-plugin
+        pip install mkdocs-material
+    
+    - name: Build Docs
+      run: |
+          mkdocs build
+          
+    - name: Zip Build Folder
+      run: |
+        zip -r ${{ github.event.repository.name }}.zip site/
+        
+    - name: List
+      run: |
+        ls
+   
+    - name: Upload File
+      id: upload
+      uses: JantHsueh/upload-file-action@master
+      with:
+        url: https://docs.brahma.ai/upload-build
+        forms: '{}'
+        fileForms: '{"buildZip":"${{ github.event.repository.name }}.zip"}'

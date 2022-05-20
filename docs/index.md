@@ -1,4 +1,4 @@
-[![Logo](/docs/logo.png)](https://30secondsofcode.org/js/p/1)
+[![Logo](https://raw.githubusercontent.com/FLabsTeam/30-seconds-of-code/master/logo.png)](https://30secondsofcode.org/js/p/1)
 
 # 30 seconds of code
 
