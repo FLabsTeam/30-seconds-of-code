@@ -1,12 +1,12 @@
-site_name: ''
+site_name: 30 Sec of code
 site_url: ''
 theme:
   name: material
   logo: https://static.footloose.io/media_assets/logos/nyana-logo-light.png
   palette:
-    scheme: default
-    accent: deep purple
     primary: indigo
+    accent: deep purple
+    scheme: default
   font:
     text: Roboto
     code: Roboto Mono
@@ -17,10 +17,12 @@ theme:
     - navigation.tracking
 extra_css:
   - https://static.footloose.io/customCss/extra.css
+  - ''
 extra_javascript:
   - https://static.footloose.io/customJavascripts/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - ''
 copyright: >-
   Built with <a href="https://nyana.brahma.ai">Nyana-ai</a> by <a
   href="https://footloose.io">footloose labs</a>
@@ -600,9 +602,7 @@ nav:
 extra:
   generator: false
   social:
-    - icon: fontawesome/brands/instagram
-      link: https://instagram.com/footloose.io
-      name: footloose.io
-    - icon: fontawesome/brands/github
-      link: https://github.com/footlooselabs
-      name: footlooselabs
+    - link: ''
+      icon: fontawesome/brands/instagram
+    - link: https://github.com/30-second
+      icon: fontawesome/brands/github
