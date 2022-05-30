@@ -24,6 +24,12 @@ const CSVToArray = (data, delimiter = ',', omitFirstRow = false) =>
     .map(v => v.split(delimiter));
 ```
 
+
+
+
+
+
+
 ```js
 CSVToArray('a,b\nc,d'); // [['a', 'b'], ['c', 'd']];
 CSVToArray('a;b\nc;d', ';'); // [['a', 'b'], ['c', 'd']];
