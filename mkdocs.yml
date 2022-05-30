@@ -18,11 +18,13 @@ theme:
 extra_css:
   - https://static.footloose.io/customCss/extra.css
   - ''
+  - https://unpkg.com/x-data-spreadsheet@1.1.5/dist/xspreadsheet.css
 extra_javascript:
   - https://static.footloose.io/customJavascripts/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   - ''
+  - https://unpkg.com/x-data-spreadsheet@1.1.5/dist/xspreadsheet.js
 copyright: >-
   Built with <a href="https://nyana.brahma.ai">Nyana-ai</a> by <a
   href="https://footloose.io">footloose labs</a>
