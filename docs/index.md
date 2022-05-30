@@ -1,6 +1,10 @@
 [![Logo](https://raw.githubusercontent.com/FLabsTeam/30-seconds-of-code/master/docs/logo.png)](https://30secondsofcode.org/js/p/1)
 
+
 # 30 seconds of code
+
+
+
 
 > Short JavaScript code snippets for all your development needs
 
@@ -13,6 +17,10 @@
 
 ## Want to contribute?
 
+
+
+
+
 * If you want to help us improve, take a minute to read the [Contribution Guidelines](/CONTRIBUTING.md) first.
 * Use the [Snippet Template](/snippet-template.md) to add new snippets to the collection.
 * If you find a problem with a specific snippet, please [open an issue](https://github.com/30-seconds/30-seconds-of-code/issues/new).
@@ -24,3 +32,9 @@
 * All snippets are licensed under the CC-BY-4.0 License, unless explicitly stated otherwise.
 * Logos, names and trademarks are not to be used without the explicit consent of the owners of the 30 seconds of code GitHub organization.
 * Our website is powered by [Netlify](https://www.netlify.com/), [Next.js](https://nextjs.org/) & [GitHub](https://github.com/).
+
+
+
+
+
+
