@@ -4,7 +4,7 @@ theme:
   name: material
   logo: https://static.footloose.io/media_assets/logos/nyana-logo-light.png
   palette:
-    primary: indigo
+    primary: deep purple
     accent: deep purple
     scheme: default
   font:
@@ -19,12 +19,18 @@ extra_css:
   - https://static.footloose.io/customCss/extra.css
   - ''
   - https://unpkg.com/x-data-spreadsheet@1.1.5/dist/xspreadsheet.css
+  - https://unpkg.com/x-data-spreadsheet@1.1.5/dist/xspreadsheet.css
 extra_javascript:
   - https://static.footloose.io/customJavascripts/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   - ''
   - https://unpkg.com/x-data-spreadsheet@1.1.5/dist/xspreadsheet.js
+  - https://unpkg.com/x-data-spreadsheet@1.1.5/dist/xspreadsheet.js
+  - >-
+    https://s3.ap-south-1.amazonaws.com/static.footloose.io/customJavascripts/worksheetParser.js
+  - >-
+    https://s3.ap-south-1.amazonaws.com/static.footloose.io/abstraction/parser.js
 copyright: >-
   Built with <a href="https://nyana.brahma.ai">Nyana-ai</a> by <a
   href="https://footloose.io">footloose labs</a>
@@ -45,6 +51,8 @@ markdown_extensions:
 nav:
   - Introduction: index.md
   - CSVToArray: CSVToArray.md
+  - TextToAbstraction: texttoabstraction.md
+  - Math Formula: math formula.md
   - CSVToJSON: CSVToJSON.md
   - HSBToRGB: HSBToRGB.md
   - HSLToRGB: HSLToRGB.md
