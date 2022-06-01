@@ -4,9 +4,9 @@ theme:
   name: material
   logo: https://static.footloose.io/media_assets/logos/nyana-logo-light.png
   palette:
-    primary: indigo
-    accent: deep purple
     scheme: default
+    accent: blue
+    primary: indigo
   font:
     text: Roboto
     code: Roboto Mono
@@ -18,11 +18,15 @@ theme:
 extra_css:
   - https://static.footloose.io/customCss/extra.css
   - ''
+  - https://unpkg.com/x-data-spreadsheet@1.1.5/dist/xspreadsheet.css
 extra_javascript:
   - https://static.footloose.io/customJavascripts/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   - ''
+  - https://unpkg.com/x-data-spreadsheet@1.1.5/dist/xspreadsheet.js
+  - >-
+    https://s3.ap-south-1.amazonaws.com/static.footloose.io/abstraction/parser.js
 copyright: >-
   Built with <a href="https://nyana.brahma.ai">Nyana-ai</a> by <a
   href="https://footloose.io">footloose labs</a>
@@ -44,6 +48,7 @@ nav:
   - Introduction: index.md
   - CSVToArray: CSVToArray.md
   - CSVToJSON: CSVToJSON.md
+  - someJsFolder: somejsfolder.md
   - HSBToRGB: HSBToRGB.md
   - HSLToRGB: HSLToRGB.md
   - JSONToFile: JSONToFile.md
@@ -602,7 +607,7 @@ nav:
 extra:
   generator: false
   social:
-    - link: ''
-      icon: fontawesome/brands/instagram
-    - link: https://github.com/30-second
-      icon: fontawesome/brands/github
+    - icon: fontawesome/brands/instagram
+      link: ''
+    - icon: fontawesome/brands/github
+      link: https://github.com/30-second

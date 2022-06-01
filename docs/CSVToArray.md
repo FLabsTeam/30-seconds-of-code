@@ -16,6 +16,9 @@ Converts a comma-separated values (CSV) string to a 2D array.
 - Omit the second argument, `delimiter`, to use a default delimiter of `','`.
 - Omit the third argument, `omitFirstRow`, to include the first row (title row) of the CSV string.
 
+
+
+
 ```js
 const CSVToArray = (data, delimiter = ',', omitFirstRow = false) =>
   data
@@ -24,8 +27,32 @@ const CSVToArray = (data, delimiter = ',', omitFirstRow = false) =>
     .map(v => v.split(delimiter));
 ```
 
+
+
+
+
+shjsjfhshs
+
+hellow worldshhs
+
+jjjjjjshehejjee
+hehehehhe
+hehehhe
+hehehe
+ehehhehe
+
 ```js
 CSVToArray('a,b\nc,d'); // [['a', 'b'], ['c', 'd']];
 CSVToArray('a;b\nc;d', ';'); // [['a', 'b'], ['c', 'd']];
 CSVToArray('col1,col2\na,b\nc,d', ',', true); // [['a', 'b'], ['c', 'd']];
 ```
+
+
+
+
+
+
+famfkadfakjsf
+asfkhbaskfnasjkdfasf
+skskdfksjdfhsdf
+f

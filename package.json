@@ -1,0 +1,9 @@
+{
+  "name": "8acf4491-afce-4e0c-b056-b11d9ddd27db-document",
+  "version": "1.0.0",
+  "dependencies": {
+    "form-data": "^4.0.0",
+    "n-readlines": "^1.0.1",
+    "node-fetch": "^2.6.7"
+  }
+}

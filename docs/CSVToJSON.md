@@ -7,6 +7,29 @@ firstSeen: 2018-06-27T21:14:24+03:00
 lastUpdated: 2022-01-30T12:14:39+02:00
 ---
 
+
+<div class="abstraction">
+			```abstraction-someUniqueName
+:::Features:::
+  1. TOUCH_BTN
+     value: 0
+     elasticity: 0.5
+     elasticDefault: 0
+  2. SPEAKER_OUTPUT
+     value: 0
+:::Logic:::
+  1. LO1
+    TOUCH_BTN eq 2
+    SPEAKER_OUTPUT ne 1
+:::Behaviours:::
+  1. RingBell
+     {LO1}-->[SPEAKER_OUTPUT=1]>-->[time=5s]-->[SPEAKER_OUTPUT=0]-->[time=9s]-->[SPEAKER_OUTPUT=1]
+```
+					
+		  </div>
+
+
+
 Converts a comma-separated values (CSV) string to a 2D array of objects.
 The first row of the string is used as the title row.
 
