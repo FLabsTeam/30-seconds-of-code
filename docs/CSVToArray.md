@@ -27,9 +27,6 @@ const CSVToArray = (data, delimiter = ',', omitFirstRow = false) =>
 
 
 
-
-
-
 ```js
 CSVToArray('a,b\nc,d'); // [['a', 'b'], ['c', 'd']];
 CSVToArray('a;b\nc;d', ';'); // [['a', 'b'], ['c', 'd']];
