@@ -26,6 +26,10 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   - ''
   - https://unpkg.com/x-data-spreadsheet@1.1.5/dist/xspreadsheet.js
+  - >-
+    https://s3.ap-south-1.amazonaws.com/static.footloose.io/customJavascripts/worksheetParser.js
+  - >-
+    https://s3.ap-south-1.amazonaws.com/static.footloose.io/abstraction/parser.js
   - https://unpkg.com/x-data-spreadsheet@1.1.5/dist/xspreadsheet.js
   - >-
     https://s3.ap-south-1.amazonaws.com/static.footloose.io/customJavascripts/worksheetParser.js
@@ -50,6 +54,14 @@ markdown_extensions:
       generic: true
 nav:
   - Introduction: index.md
+  - BigLetter:
+      - Big-Index: bigletter/big-index.md
+  - Brands:
+      - one-rename: brands/one-rename.md
+  - test: test.md
+  - testu:
+      - rename-test: testu/rename-test.md
+      - test33: testu/test33.md
   - CSVToArray: CSVToArray.md
   - TextToAbstraction: texttoabstraction.md
   - Math Formula: math formula.md
