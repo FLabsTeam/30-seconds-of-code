@@ -20,13 +20,11 @@ extra_css:
   - ''
   - https://unpkg.com/x-data-spreadsheet@1.1.5/dist/xspreadsheet.css
   - https://unpkg.com/x-data-spreadsheet@1.1.5/dist/xspreadsheet.css
-  - https://unpkg.com/x-data-spreadsheet@1.1.5/dist/xspreadsheet.css
 extra_javascript:
   - https://static.footloose.io/customJavascripts/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   - ''
-  - https://unpkg.com/x-data-spreadsheet@1.1.5/dist/xspreadsheet.js
   - https://unpkg.com/x-data-spreadsheet@1.1.5/dist/xspreadsheet.js
   - >-
     https://s3.ap-south-1.amazonaws.com/static.footloose.io/customJavascripts/worksheetParser.js
@@ -56,6 +54,14 @@ markdown_extensions:
       generic: true
 nav:
   - Introduction: index.md
+  - BigLetter:
+      - Big-Index: bigletter/big-index.md
+  - Brands:
+      - one-rename: brands/one-rename.md
+  - test: test.md
+  - testu:
+      - rename-test: testu/rename-test.md
+      - test33: testu/test33.md
   - CSVToArray: CSVToArray.md
   - TextToAbstraction: texttoabstraction.md
   - Math Formula: math formula.md

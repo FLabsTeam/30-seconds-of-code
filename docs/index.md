@@ -1,5 +1,18 @@
+some new changes
 
+```mermaid 
+flowchart TB
+    A --> B
+    A --> D
+    B --> C
+    B --> D
+```
 
+```mermaid 
+sequenceDiagram
+    A->>B: I #9829; you!
+    B->>A: I #9829; you #infin; times more!
+```
 
 
 ```mermaid 
